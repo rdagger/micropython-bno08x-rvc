@@ -1,4 +1,4 @@
-"""Demo for reading compass direction in RTV mode."""
+"""Demo for reading compass direction in UART-RVC mode."""
 from time import sleep
 from machine import UART  # type: ignore
 from bno08x_rvc import BNO08x_RVC, RVCReadTimeoutError
