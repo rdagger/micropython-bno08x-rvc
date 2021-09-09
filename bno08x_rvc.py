@@ -1,5 +1,6 @@
 """
-A simple helper library for using the UART-RVC mode of the BNO08x IMUs
+A simple helper library for using the UART-RVC mode of the BNO08x IMUs.
+
 Provides intuitive access to yaw, pitch, roll, x_accel, y_accel and z_accel
 
 Ported to MicroPython by rdagger from Adafruit_CircuitPython_BNO08x_RVC
@@ -64,7 +65,10 @@ class BNO08x_RVC:
 
     @property
     def heading(self):
-        """Returns the current heading made up of
+        """Return the current heading.
+
+        Returns:
+            List(float):
                Yaw
                Pitch
                Roll
